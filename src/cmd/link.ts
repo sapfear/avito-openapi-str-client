@@ -5,6 +5,8 @@ export const openLink = () => {
     const scopeList = SCOPES.join(',');
     const userLink = `https://avito.ru/oauth?response_type=code&client_id=${CLIENT_ID}&scope=${scopeList}`;
 
+    console.log(userLink);
+
     return open(userLink);
 };
 
